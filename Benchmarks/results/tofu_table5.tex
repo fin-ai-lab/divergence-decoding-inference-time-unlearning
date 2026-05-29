@@ -1,0 +1,24 @@
+\begin{tabular}{llcccc}
+\toprule
+Method & Config & Agg. $\uparrow$ & Mem. $\uparrow$ & Priv. $\uparrow$ & Utility $\uparrow$ \\
+\midrule
+Target & Full & 0.02 $\pm$ 0.01 & 0.01 $\pm$ 0.00 & 0.38 $\pm$ 0.00 & 1.00 $\pm$ 0.04 \\
+Retrain & Retain90 & 0.78 $\pm$ 0.01 & 0.53 $\pm$ 0.02 & 0.98 $\pm$ 0.01 & 1.03 $\pm$ 0.04 \\
+\midrule
+Linear DD & $\alpha$=1.5 & \textbf{0.78 $\pm$ 0.01} & 0.56 $\pm$ 0.02 & \textbf{0.95 $\pm$ 0.03} & 1.00 $\pm$ 0.04 \\
+Rank DD & k=20 & \textbf{0.85 $\pm$ 0.02} & 0.80 $\pm$ 0.01 & 0.81 $\pm$ 0.02 & 0.95 $\pm$ 0.05 \\
+Distill DD & lr=4e-05, T=1.5 & 0.73 $\pm$ 0.01 & 0.51 $\pm$ 0.02 & \textbf{0.89 $\pm$ 0.03} & 0.95 $\pm$ 0.03 \\
+GradAscent & lr=2e-6, e=3 & 0.63 $\pm$ 0.01 & 0.51 $\pm$ 0.01 & 0.61 $\pm$ 0.02 & 0.87 $\pm$ 0.04 \\
+GradDiff/GA-GDR & lr=2e-6, e=3 & 0.64 $\pm$ 0.01 & 0.52 $\pm$ 0.01 & 0.62 $\pm$ 0.02 & 0.86 $\pm$ 0.04 \\
+NPO & lr=4e-6, e=2 & 0.67 $\pm$ 0.01 & 0.57 $\pm$ 0.01 & 0.68 $\pm$ 0.02 & 0.82 $\pm$ 0.03 \\
+RMU & lr=8e-7, e=4 & 0.67 $\pm$ 0.02 & 0.60 $\pm$ 0.01 & 0.74 $\pm$ 0.03 & 0.69 $\pm$ 0.04 \\
+SimNPO & lr=3e-6, e=3 & 0.59 $\pm$ 0.01 & 0.48 $\pm$ 0.01 & 0.54 $\pm$ 0.02 & 0.90 $\pm$ 0.04 \\
+UNDIAL & lr=4e-6, e=10 & 0.60 $\pm$ 0.01 & 0.57 $\pm$ 0.01 & 0.43 $\pm$ 0.01 & \textbf{1.07 $\pm$ 0.02} \\
+LUNAR & lr=0.0001 & 0.17 & 0.07 & 0.39 & \textbf{1.03} \\
+$\delta$-Unlearning & lr=7e-6 & 0.28 $\pm$ 0.07 & 0.78 $\pm$ 0.01 & 0.69 $\pm$ 0.02 & 0.13 $\pm$ 0.04 \\
+ULD & lr=2e-3 & 0.40 $\pm$ 0.02 & 0.40 $\pm$ 0.02 & 0.39 $\pm$ 0.00 & 0.42 $\pm$ 0.06 \\
+WHP & lr=1e-5, $\alpha$=3.0 & 0.56 $\pm$ 0.01 & 0.43 $\pm$ 0.02 & 0.51 $\pm$ 0.02 & 0.94 $\pm$ 0.05 \\
+GUARD & lr=1e-3, $\delta$=0.3 & 0.02 $\pm$ 0.01 & 0.01 $\pm$ 0.00 & 0.38 $\pm$ 0.00 & 0.86 $\pm$ 0.04 \\
+ECO & lr=1e-5, str=50 & 0.65 $\pm$ 0.02 & 0.69 $\pm$ 0.03 & 0.66 $\pm$ 0.02 & 0.62 $\pm$ 0.05 \\
+\bottomrule
+\end{tabular}

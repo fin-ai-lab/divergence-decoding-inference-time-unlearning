@@ -1,0 +1,7 @@
+{
+    "extraction_strength": 0.11333333333333333,
+    "forget_knowmem_ROUGE": 0.49845045305571617,
+    "forget_verbmem_ROUGE": 0.3651496084317444,
+    "privleak": -99.339999980132,
+    "retain_knowmem_ROUGE": 0.4702335849669341
+}

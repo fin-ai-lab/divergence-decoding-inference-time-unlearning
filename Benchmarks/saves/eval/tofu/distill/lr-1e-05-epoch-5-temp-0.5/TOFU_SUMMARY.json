@@ -1,0 +1,12 @@
+{
+    "exact_memorization": 0.7845519983023405,
+    "extraction_strength": 0.1304913015296391,
+    "forget_Q_A_PARA_Prob": 0.142938232421875,
+    "forget_Q_A_gibberish": 0.9097712630406022,
+    "forget_truth_ratio": 0.6911122075099426,
+    "mia_loss": 0.8680437499999998,
+    "mia_min_k": 0.9204906249999999,
+    "mia_min_k_plus_plus": 0.9636,
+    "mia_zlib": 0.76185,
+    "model_utility": 0.5527304147571278
+}

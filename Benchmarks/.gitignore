@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Secrets / machine-specific
+scripts/pythia/.env
+
+# Heavy artifacts (never committed — staged on /hpc_temp, persisted to /data/lab)
+/models/
+/saves/unlearn/
+/data/news/
+/data/TOFU_downloaded/
+/outputs/
+/multirun/
+wandb/
+
+# Per-index eval dumps are large (~2 MB each); the small *_SUMMARY.json point
+# estimates ARE committed so figures/tables regenerate. Analysis defaults to
+# point estimates (SKIP_BOOTSTRAP=True in tofu_scores.py / muse_scores.py); set
+# it False with these restored to recompute the 99% bootstrap CIs.
+*_EVAL.json
+TOFU_EVAL.json.*
+MUSE_EVAL.json.*
+bootstrap_cache.json*
+
+# Cluster + tooling logs
+slurm-*.out
+*.log
+
+# Hydra / misc
+.hydra/
+.DS_Store
